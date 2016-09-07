@@ -222,12 +222,14 @@
         NSString *nickName = self.textNickName.text;
         NSString *telPhone = self.textTelNo.text;
         UIImageView *imageHead = self.imageHead.portraitImageView;
-        NSUInteger ret = [self.userSign sign:nickName telPhone:telPhone imageHead:imageHead];
+        self.userSign.signState = [self.userSign sign:nickName telPhone:telPhone imageHead:imageHead];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             
+            while (self.userSign.signState <= 0);
+            
             //注册成功
-            if (ret == 0){
+            if (self.userSign.signState == 1 || self.userSign.signState == 4){
                if ([self.userSign skipToMainView])
                {
                    return;
@@ -235,7 +237,7 @@
             }
             
             //失败后显示消息提示
-            [Util showAlert:[self.userSign getMessage:ret] view:self];
+            [Util showAlert:[self.userSign getMessage:self.userSign.signState] view:self];
             
             self.signing = NO;
             [self.activeIndWait stopAnimating];

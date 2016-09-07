@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC0970551D69963100D5A636 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0970541D69963100D5A636 /* Util.m */; };
+		CC325CA11D7A7A3C0081F381 /* url.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC325CA01D7A7A3C0081F381 /* url.plist */; };
 		CC33C7761D69369A00984A22 /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC33C7751D69369A00984A22 /* VPImageCropperViewController.m */; };
 		CC33C7781D693F9400984A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC33C7771D693F9400984A22 /* Assets.xcassets */; };
 		CC33C77B1D694FF300984A22 /* ImageHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC33C77A1D694FF300984A22 /* ImageHeadViewController.m */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		CC0970531D69963100D5A636 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = tplib/Util/Util.h; sourceTree = "<group>"; };
 		CC0970541D69963100D5A636 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Util.m; path = tplib/Util/Util.m; sourceTree = "<group>"; };
+		CC325CA01D7A7A3C0081F381 /* url.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = url.plist; sourceTree = "<group>"; };
 		CC33C7741D69369A00984A22 /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPImageCropperViewController.h; path = tplib/VPICController/VPImageCropperViewController.h; sourceTree = "<group>"; };
 		CC33C7751D69369A00984A22 /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPImageCropperViewController.m; path = tplib/VPICController/VPImageCropperViewController.m; sourceTree = "<group>"; };
 		CC33C7771D693F9400984A22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				CCE0E4091D66E547008BB869 /* AppDelegate.h */,
 				CCE0E40A1D66E547008BB869 /* AppDelegate.m */,
 				CCE0E4071D66E547008BB869 /* main.m */,
+				CC325CA01D7A7A3C0081F381 /* url.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				CCE0E4161D66E547008BB869 /* LaunchScreen.storyboard in Resources */,
 				CC33C7781D693F9400984A22 /* Assets.xcassets in Resources */,
+				CC325CA11D7A7A3C0081F381 /* url.plist in Resources */,
 				CCE0E4111D66E547008BB869 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

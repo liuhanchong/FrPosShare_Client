@@ -13,6 +13,7 @@
 #define SYSCONFIGFILE @"sys.plist"
 #define USERHEADIMAGE @"imageHead.jpg"
 #define USERHEADSIZE {100, 100}
+#define URLPLIST @"url.plist" 
 
 @interface Util : NSObject
 
@@ -24,5 +25,6 @@
 + (NSString *)componPath:(NSString *)path name:(NSString *)name;
 + (UIImage *)imageCompressForWidth:(UIImage *)sourceImage targetWidth:(CGFloat)defineWidth;
 + (UIImage *)imageCompressForSize:(UIImage *)sourceImage targetSize:(CGSize)size;
++ (NSString *)getURLString:(NSString *) key;//获取url.plist文件的属性值
 
 @end

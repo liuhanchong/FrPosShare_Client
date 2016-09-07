@@ -61,7 +61,7 @@
     NSEnumerator *dicKeyFormPList = [usersDicFPList keyEnumerator];
     NSEnumerator *dicKey = [usersDic keyEnumerator];
     
-    NSLog(@"Get file path: %@", plistPath);
+//    NSLog(@"Get file path: %@", plistPath);
     
     BOOL find = NO;
     for (NSString *keyFromPList in dicKeyFormPList){
@@ -150,7 +150,15 @@
     UIGraphicsEndImageContext();
     
     return newImage;
+}
+
++ (NSString *)getURLString:(NSString *) key
+{
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"url" ofType:@"plist"];
     
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc]initWithContentsOfFile:plistPath];
+    
+    return [dic valueForKey:key];
 }
 
 @end

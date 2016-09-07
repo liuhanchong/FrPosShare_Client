@@ -15,4 +15,6 @@
 - (BOOL)skipToMainView;
 - (NSString *)getMessage:(NSUInteger)ret;
 
+@property (nonatomic) SInt8 signState;
+
 @end
